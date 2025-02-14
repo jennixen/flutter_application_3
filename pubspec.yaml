@@ -24,6 +24,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/dog.png
+    - assets/cauldron.png
+    - assets/wizard-interior.png
     - assets/wizard.png
     - assets/blue-chicken.png
     - assets/void-chicken.png
