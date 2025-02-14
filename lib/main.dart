@@ -41,19 +41,32 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Stack(
         children: <Widget>[
+          Positioned.fill(
+            child: Opacity(
+              opacity: 0.9,
+              child: Image.asset(
+                'assets/wizard-interior.png',
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
           // The main content
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+                
                 const SizedBox(height: 60),
                 const Text(
                   'Mixing... mixing... mixing...',
                   style: TextStyle(
                     fontSize: 24,
+                    
                     fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
                 ),
+                
                 const SizedBox(height: 20),
                 SizedBox(
                   height: 400,
@@ -121,17 +134,28 @@ class _NextPageState extends State<NextPage> {
       ),
       body: Stack(
         children: <Widget>[
+          Positioned.fill(
+            child: Opacity(
+              opacity: 0.9,
+              child: Image.asset(
+                'assets/wizard-interior.png',
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
           // The main content with images
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
+                
                 const SizedBox(height: 60),
                 const Text(
                   'Oh hi doggy!',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -212,6 +236,15 @@ class _WaitOhNoPageState extends State<WaitOhNoPage> {
       ),
       body: Stack(
         children: <Widget>[
+                    Positioned.fill(
+            child: Opacity(
+              opacity: 0.9,
+              child: Image.asset(
+                'assets/wizard-interior.png',
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
           // The main content with images
           Center(
             child: Column(
@@ -223,6 +256,7 @@ class _WaitOhNoPageState extends State<WaitOhNoPage> {
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
                 ),
                 const SizedBox(height: 20),
