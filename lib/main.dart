@@ -380,7 +380,15 @@ class _ChickensPageState extends State<ChickensPage> {
       backgroundColor: Colors.green[200],
       body: Stack(
         children: [
-          // Adding wizard and cauldron images
+          Positioned.fill(
+            child: Opacity(
+              opacity: 0.9,
+              child: Image.asset(
+                'assets/wizard-interior.png',
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
           Positioned(
             top: 50,
             left: screenWidth / 2 - 150,
