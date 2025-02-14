@@ -272,7 +272,7 @@ class _WaitOhNoPageState extends State<WaitOhNoPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const WaitOhNoPage(),
+                    builder: (context) => const ChickensPage(),
                   ),
                 );
               },
