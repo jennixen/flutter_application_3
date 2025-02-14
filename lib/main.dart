@@ -379,18 +379,48 @@ class _ChickensPageState extends State<ChickensPage> {
     return Scaffold(
       backgroundColor: Colors.green[200],
       body: Stack(
-        children: List.generate(chickenImages.length, (index) {
-          return AnimatedPositioned(
-            duration: Duration(milliseconds: 30),
-            left: positions[index].dx,
-            top: positions[index].dy,
+        children: [
+          // Adding wizard and cauldron images
+          Positioned(
+            top: 50,
+            left: screenWidth / 2 - 150,
             child: Image.asset(
-              chickenImages[index],
-              width: 50,
-              height: 50,
+              'assets/wizard.png',
+              width: 300,
+              height: 300,
             ),
-          );
-        }),
+          ),
+          Positioned(
+            top: 250,
+            left: screenWidth / 2 - 150,
+            child: Image.asset(
+              'assets/cauldron.png',
+              width: 300,
+              height: 300,
+            ),
+          ),
+          Positioned(
+            right: -200,
+            bottom: -200, 
+            child: Image.asset(
+              'assets/dog.png',
+              width: 1500, 
+              height: 1500,
+            ),
+          ),
+          ...List.generate(chickenImages.length, (index) {
+            return AnimatedPositioned(
+              duration: Duration(milliseconds: 30),
+              left: positions[index].dx,
+              top: positions[index].dy,
+              child: Image.asset(
+                chickenImages[index],
+                width: 50,
+                height: 50,
+              ),
+            );
+          }),
+        ],
       ),
     );
   }
